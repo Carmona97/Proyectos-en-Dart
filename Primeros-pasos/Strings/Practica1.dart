@@ -37,7 +37,14 @@ se hace de la siguiente manera*/
   print("Indique su nombre");
   String? nombre = stdin.readLineSync();
   print("Su nombre es $nombre");
-  
 
+//Para definir un array de Strings se hace de la siguiente forma:
+  List<String> nombreDelArray = [];
+  
+//No existe un metodo .append() en Dart por lo que se tiene que usar el operador "+" o la interpolacion de cadenas con ${}
+  String cadena1 = "Hola ";
+  String cadena2 = "mundo";
+  String resultado1 = cadena1 + cadena2;
+  String resultado2 = "$cadena1$cadena2";
 
 }
