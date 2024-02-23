@@ -76,7 +76,7 @@ void ejercicio4(){
   String texto = stdin.readLineSync() ?? "";
 
   for(int i=0;i<texto.length;i++){
-    String caracter = texto.substring(i,i+1).toUpperCase();
+    String caracter = texto[i].toUpperCase();
     switch(caracter){
       case "A": contadorA++;
       case "E": contadorE++;
