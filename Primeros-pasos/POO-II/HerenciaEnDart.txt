@@ -1,0 +1,21 @@
+La herencia es un concepto fundamental en la programación orientada a objetos (POO) que permite a una clase heredar atributos y métodos de otra clase. En Dart, la herencia se implementa de la siguiente manera:
+
+Sintaxis de herencia: Para heredar de una clase en Dart, simplemente utiliza la palabra clave extends seguida del nombre de la clase de la que deseas heredar. Por ejemplo:
+
+dart
+class ClaseHija extends ClasePadre {
+  // cuerpo de la clase hija
+}
+Acceso a miembros heredados: Una vez que una clase hija ha heredado de una clase padre, puede acceder a los miembros (atributos y métodos) de la clase padre utilizando la notación de punto (.).
+
+Métodos y atributos protegidos y privados: En Dart, los miembros marcados como _ son accesibles solo dentro de la misma biblioteca (o archivo). Esto significa que las clases hijas pueden acceder a estos miembros si están en la misma biblioteca que la clase padre.
+
+Métodos de anulación (override): Una clase hija puede anular (override) métodos de su clase padre. Esto permite modificar el comportamiento de un método heredado en la clase hija. Para anular un método, utiliza la anotación @override antes de la definición del método en la clase hija.
+
+Constructores en clases hijas: Las clases hijas pueden tener sus propios constructores, pero si no se especifica ningún constructor, Dart utilizará automáticamente el constructor sin argumentos de la clase padre. Si deseas utilizar un constructor específico de la clase padre, puedes llamarlo utilizando super().
+
+Clases abstractas e interfaces: Dart soporta clases abstractas e interfaces. Una clase abstracta no se puede instanciar directamente, pero puede ser utilizada como una superclase. Las interfaces definen un conjunto de métodos que una clase debe implementar.
+
+Herencia múltiple: Dart no admite herencia múltiple de clases, lo que significa que una clase no puede heredar de múltiples clases directamente. Sin embargo, Dart admite implementación de múltiples interfaces.
+
+Jerarquía de herencia: Las clases pueden formar una jerarquía de herencia, donde una clase puede heredar de otra clase, y a su vez, otra clase puede heredar de ella. Esto permite la creación de relaciones de herencia complejas.
